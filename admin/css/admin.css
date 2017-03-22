@@ -1,0 +1,185 @@
+.header {
+    background-color: #0099CC;
+    height: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    padding-left: 5px;
+    padding-top: 5px;
+    height: 80%;
+}
+
+.logob {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logob > li {
+    float: left;
+    width: 180px;
+    height: 50px;
+    list-style: none;
+}
+
+.left {
+    background-color: #0099CC;
+    width: 180px;
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.title {
+    color: #FFFFFF;
+    padding: 15px;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.head-list {
+    float: right;
+    margin: 0;
+}
+
+.head-list > li {
+    height: 50px;
+    float: left;
+    border: 0px;
+    background-color: #0099CC;
+    font-size: 16px;
+    margin: 0px;
+    list-style: none;
+    border-left: 1px solid #C9C6C6;
+}
+
+.head-list > li > a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+}
+
+.user-nav {
+    display: none;
+}
+
+.head-list > li:hover {
+    background-color: #28B1F0;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.nav-list > li > a {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: #0099CC;
+}
+
+.nav-list > li > a:hover {
+    background: -webkit-linear-gradient(left, #20ABD9, #0099CC);
+}
+
+.nav-list > li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    padding: 10px 15px;
+    font-size: 12px;
+}
+
+.nav-list > li a > .fa {
+    /*强迫症 不对齐不舒服*/
+    padding-top: 2px;
+}
+
+.nav-head {
+    margin-top: 6px;
+    text-align: center;
+}
+
+.nav-head > img {
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+}
+
+.sub-nav {
+    padding: 0;
+    display: none;
+    background-color: #18B3E7;
+}
+
+.active {
+    display: block;
+}
+
+.sub-nav > li > a:hover {
+    background: -webkit-linear-gradient(left, #20ABD9, #18B3E7);
+}
+
+.sub-nav > .active > a {
+    background-color: #00bfff;
+}
+
+.sub-nav > .active > a:hover {
+    background: #00bfff;
+}
+
+.sub-nav > li {
+    position: relative;
+    list-style: none;
+}
+
+.content {
+    position: absolute;
+    overflow-y: auto;
+    top: 50px;
+    left: 180px;
+    bottom: 0;
+    right: 0;
+}
+
+.content > .head {
+    padding: 5px;
+    border-bottom: 1px solid #DDD9D9;
+}
+
+.content > .head > .pos {
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    display: inline;
+}
+
+.welcome {
+    padding-left: 10px;
+    border-bottom: 1px solid #DDD9D9;
+}
+
+.welcome > h1 {
+    padding: 10px 0;
+    margin: 0;
+    font-size: 1.6em;
+    font-weight: normal;
+}
+
+.welcome > h2 {
+    color: #706E6E;
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: normal;
+}

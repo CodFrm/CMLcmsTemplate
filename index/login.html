@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="css/default.css" />
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <title>CMLcms 登陆</title>
+</head>
+
+<body style="background-color: #CCCCCC;">
+    <div class="login-form">
+        <div class="login-logo"><img src="logo.png" class="logo" /></div>
+        <div class="login-input">
+            <input type="text" id="username" class="text-input" placeholder="请在这里输入用户名" /><br />
+            <input type="password" id="password" class="text-input" placeholder="" />
+        </div>
+        <div class="login-botton">
+            <div class="login-post">
+                <input type="button" class="btn-post" value="注册" />
+                <input type="button" class="btn-post" id="btn-login" value="登陆" />
+            </div>
+            <input type="checkbox" name="remember" />记住我
+        </div>
+    </div>
+    <div class="login-msg">
+        <span class="content">消息内容</span>
+    </div>
+</body>
+<script>
+    jQuery(document).ready(function ($) {
+        $('#btn-login').click(function (event) {
+        	username=$('#username').val();
+        	password=$('#password').val();
+            if (username <= 0) {
+                ShowMsg('请输入用户名');
+            }else if(password.length <= 6){
+                ShowMsg('密码为空或太短');
+            }else{
+                $.ajax({
+                	url: 'http://127.0.0.1/CMLcms/index/login/login.html',//{:url('index/login')}
+                	type: 'post',
+                	// dataType: 'default',
+                	data: {user: username,pwd:password},
+                	success: function(data){
+                		ShowMsg(data.msg);
+                	}
+                });
+                
+            }
+        });
+    });
+
+    function ShowMsg(text) {
+        $('.login-msg .content').text(text);
+        if ($('.login-msg').css('display') != 'block') {
+            $('.login-msg').slideToggle().end();
+            setTimeout(function () {
+                if ($('.login-msg').css('display') != 'nono') {
+                    $('.login-msg').slideToggle().end();
+                }
+            }, 2000);
+        }
+
+    }
+</script>
+
+</html>

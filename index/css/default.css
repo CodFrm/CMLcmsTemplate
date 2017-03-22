@@ -1,0 +1,82 @@
+.login-form {
+	background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    margin-top: -100px;
+    margin-left: -250px;
+    height: 200px;
+    border: 1px solid #003366;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 0px;
+    border-radius: 4px;
+}
+
+
+.login-logo {
+    text-align: center;
+    border-bottom: 1px solid #003366;
+}
+
+.login-logo > .logo {
+    width: 150px;
+}
+
+.login-input {
+    text-align: center;
+    padding: 15px;
+}
+
+.login-input > .text-input {
+	outline: none;
+    width: 70%;
+    height: 25px;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding-left: 4px;
+}
+
+.login-input > .text-input:hover,
+.login-input > .text-input:focus{
+    border: 1px solid #666666;
+    box-shadow: 0px 0px 4px #666666;
+}
+.login-botton{
+	border-top: 1px solid #003366;
+	padding-top: 10px;
+}
+.login-post{
+	
+		float: right;
+}
+.login-post > .btn-post{
+	border: 0px;
+	color: #FFFFFF;
+	min-width: 80px;
+	min-height: 30px;
+	background-color: #6a92d4;
+	outline: none;
+}
+.login-post > .btn-post:hover{
+	background-color: #4479d4;
+}
+.login-post > .btn-post:active{
+	background-color: #1049a9;
+}
+
+.login-msg{
+	display: none;
+	color: #FFFFFF;
+	text-align: center;
+	border-radius: 4px;
+	background-color: rgba(0,0,0,.8);
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    width: 400px;
+    margin-top: -15px;
+    margin-left: -200px;
+    height: 25px; 
+}
